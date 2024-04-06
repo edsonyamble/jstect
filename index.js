@@ -1,11 +1,14 @@
-const objectA = {
-	a: 10,
-	b: true,
+const reneMilk = {
+	you: 'lait blanc',
+	asa: 10,
+	aus: true,
 }
-const copyOFA = objectA
-copyOFA.a = 20
-console.table(objectA)
-copyOFA.c = 'abc'
-console.table(objectA)
-delete objectA.c
-console.table(copyOFA)
+const dadoMilk = reneMilk
+console.table(dadoMilk)
+dadoMilk.asa = 1000
+console.log(dadoMilk.asa)
+reneMilk.asus = 'netbook'
+console.table(dadoMilk)
+delete dadoMilk.you
+console.log(dadoMilk.you)
+console.log(dadoMilk)
