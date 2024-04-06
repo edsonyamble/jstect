@@ -5,3 +5,5 @@ const objectA = {
 const copyOFA = objectA
 copyOFA.a = 20
 console.table(objectA)
+copyOFA.c = 'abc'
+console.table(objectA)
