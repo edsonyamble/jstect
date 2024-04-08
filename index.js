@@ -1,10 +1,13 @@
-const myCity = {city : 'california',
-info : {
-  isPopular:true,
-  country:'USA'
-}}
-//console.log(myCity.info.isPopular)
-//console.table(myCity['info'])
-console.table(myCity)
-delete myCity.info['country']
-console.table(myCity)
+const nam = 'Edson'
+const postsQty = 23
+// const userProfile = {
+//   name : nam,
+//   postsQty : postsQty,
+//   hasSigned : true
+// }
+const userProfile = {
+	nam,
+	postsQty,
+	hasSigned: true,
+} 
+console.table(userProfile)
