@@ -1,8 +1,10 @@
-const myCity = {city : 'california'}
-//add value in object 
-// myCity.popular = 'true'
-myCity['popular'] = 'true'
-console.log(myCity)
-const countryPropertyName = 'country'
-myCity[countryPropertyName] = 'USA'
-console.log(myCity)
+const myCity = {city : 'california',
+info : {
+  isPopular:true,
+  country:'USA'
+}}
+//console.log(myCity.info.isPopular)
+//console.table(myCity['info'])
+console.table(myCity)
+delete myCity.info['country']
+console.table(myCity)
