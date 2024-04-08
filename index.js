@@ -1,13 +1,4 @@
-const nam = 'Edson'
-const postsQty = 23
-// const userProfile = {
-//   name : nam,
-//   postsQty : postsQty,
-//   hasSigned : true
-// }
-const userProfile = {
-	nam,
-	postsQty,
-	hasSigned: true,
-} 
-console.table(userProfile)
+//global object 
+//1=window(browsers)   2=global (node js) but globalThis (browsers and node )
+//property global oject
+// console.log() = window.global.log() in browsers  = global.console.log() in node  =  globalThis.console.log() in browsers and node 
