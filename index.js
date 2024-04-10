@@ -1,13 +1,29 @@
-// JSON.parse() //это чтобы конвертивировать строка джейсон в обект джаваскрипт
-// JSON.stringify()//это чтобы конвертивировать обект джавасерипт  на строка джейсон
+//мутация в джаваскрипт  мутация это изминение
+//например
+const a = 10
+let b = a //copy by value
+b = 20
+console.log(a, b)
+
+// const posts = {
+// 	title: 'Edson',
+// 	components: true,
+// }
+// const pos = posts //copy by reference
+// pos.title='aspha'
+// console.log(posts.title)
+//мутация это изминение и все меняеть
+
+//чтобы избежать мутации
+
+// const posts = {
+//   title : "Edson",
+//   components: true
+// }
 const posts = {
 	title: 'Edson',
-	likeQty: 5,
+	components: true,
 }
-JSON.stringify(posts) //получение формат строка джейсон
-const stringgo = JSON.stringify(posts)
-JSON.parse(stringgo)//получение формат обект джаваскрипт 
-
-
-
-//эти методы работает на сервере или прям в консоле браузере 
+const pos = Object.assign({}, posts) //copy by reference
+pos.title = 'aspha'
+console.log(posts.title,pos.title)
