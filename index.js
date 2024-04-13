@@ -24,6 +24,6 @@ const posts = {
 	title: 'Edson',
 	components: true,
 }
-const pos = Object.assign({}, posts) //copy by reference
+const pos = { ...posts } //copy by reference
 pos.title = 'aspha'
-console.log(posts.title,pos.title)
+console.log(posts.title, pos.title)
