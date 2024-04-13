@@ -1,29 +1,19 @@
-//мутация в джаваскрипт  мутация это изминение
-//например
-const a = 10
-let b = a //copy by value
-b = 20
-console.log(a, b)
-
-// const posts = {
-// 	title: 'Edson',
-// 	components: true,
-// }
-// const pos = posts //copy by reference
-// pos.title='aspha'
-// console.log(posts.title)
-//мутация это изминение и все меняеть
-
-//чтобы избежать мутации
-
-// const posts = {
-//   title : "Edson",
-//   components: true
-// }
-const posts = {
-	title: 'Edson',
-	components: true,
+let a = 5
+let b = 3
+let c
+// c = a + b
+// console.log(c)
+// a = 8
+// b = 12
+// c = a + b
+// console.log(c)
+// как примерно исползовать функциии с функциии уменшает коды например
+function sum(a, b) {
+	c = a + b
+	console.log(c)
 }
-const pos = { ...posts } //copy by reference
-pos.title = 'aspha'
-console.log(posts.title, pos.title)
+sum(a, b)
+a = 8
+b = 12
+sum(a, b)
+// с помошю функциии коды уменшается
