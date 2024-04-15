@@ -1,7 +1,13 @@
-function anotherffunction() {
 
+
+let counter = 0
+function rene() {
+	counter++
+	console.log(counter)
 }
-function fnwhithCallback(callBackfunction){
-callBackfunction()
+let call = setInterval(rene, 1000)
+// let stoop = clearInterval(call)
+function clear() {
+	clearInterval(call)
 }
-fnwhithCallback(anotherffunction) 
+setTimeout(clear, 5000)
