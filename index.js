@@ -1,13 +1,12 @@
-
-
-let counter = 0
-function rene() {
-	counter++
-	console.log(counter)
+let a
+let b
+function myFn() {
+  let b  //тут например обявили новый перем у которого значение работает только внутри функциии а в шдобалноый премем не меняться так правилно 
+	a = true
+	b = 10
+	console.log(b)
 }
-let call = setInterval(rene, 1000)
-// let stoop = clearInterval(call)
-function clear() {
-	clearInterval(call)
-}
-setTimeout(clear, 5000)
+
+myFn()
+console.log(b) //chang value global variable wthith function a = true но лучше так не делать менять значениие через функции не рекомендуеться 
+console.log(a)
