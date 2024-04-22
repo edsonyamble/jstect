@@ -1,9 +1,8 @@
-'use strict'
-function myFn() {
-	a = true
-	console.log(a)
-}
+оператаор
+Операторы это стройнная функия 
 
-myFn()
-console.log(a)
-//ReferenceError: a is not defined
+Арифметические (+ - * / )
+сравнения (=== !== <= >=)
+логические (! no  && and   ||  or )
+присваевание(=)
+текстоВЫе оператаор (typeof "know the type of the variable" instanceof 'Оператор instanceof позволяет проверить, принадлежит ли объект указанному классу, с учётом наследования. (obj instanceof Class)' new delete)
