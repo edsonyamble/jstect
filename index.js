@@ -1,3 +1,11 @@
-&& || and or hackk 
-a && b si a ложные запсиь тотрезутать будет а если а не ложн то резутать будет б 
-a||b если а лож то резутать бутеть б 
+// оператор ...
+permmet d utiliser les donner d un objject dans un autre object 
+const button = {
+	with: 100,
+	text: 'buy',
+}
+const redButton = {
+	...button,
+	color: 'red',
+}
+console.table(redButton)
