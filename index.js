@@ -1,13 +1,18 @@
-// шаблоны строка 
-// позволяет написать конкентациа строка боле коротким 
- const hello = 'hello'
- const word = 'word'
- const finish = `${hello} ${word}`
- console.log(finish)
+обявленная  функция и функционалное выражение
+
+обявленная  функция (есть имя )
+function myFn(a,b){
+  let c
+  a = a + 1
+  c = a + b
+  return c
+}
+ функционалное выражение (нет имя она аномнимная )
+ function(a, b){
+  let c
+  a = a + 1
+  c = a + b
+  return c
+  }
 
 
- const hey = 'Привет'
- const name = 'меня зовут Эдсон'
- const country = 'я из кот дивуар'
- const personality = `${hello},${name} ${country}`
- console.log(personality)
