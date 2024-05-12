@@ -1,12 +1,13 @@
-const fnError = () => {
-	throw new Error('Same error')
-}
-try {
-	fnError()
-} catch (error) {
-	console.error(error) //error
-	console.log(error.message) //message in error
-}
-console.log('ready...')
-// try{выполнение блока кода}
-// cath{это блое выолняеться в случае ошибок в блок try}
+// инструкциия 
+// это обвление перемен и if else for 
+
+// let a ;
+// const b = 5;
+// a = 1;
+// if (a>b){
+//   console.log('ready.....')
+// }//инструкция
+for (let i = 0; i<5;i++) {
+  console.log(i);
+}//инструкция
+это все инструкциия
