@@ -1,15 +1,6 @@
-const newPost = (post, addDate = Date()) => ({
-	...post,
-	addDate,
-})
-const firstPost = {
-	id: 1,
-  author:'Edson'
+//default parameters function values 
+function multByFactor(value, multiplier = 1){
+  return value * multiplier
 }
-const secondPost = {
-	id: 2,
-	author: 'Kcenia',
-}
-console.dir(newPost(firstPost))
-console.dir(newPost(secondPost))
-//default function parametr values example
+multByFactor(5, 2)//20 value = 5 and multiplier = 2
+multByFactor(5)//5 value = 5 and multiplier = default 1
