@@ -4,6 +4,7 @@ let callBack = function(a, b){
   c = a + b
   return c
   }
-  Функционалное выраэение можно исползовать внутри перемен либо внутри другую функцияя например callback
+console.log(callBack(5, 9))
+  //call function expression  with variable  
 
 
