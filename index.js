@@ -1,7 +1,15 @@
-a => {
-  //если только один параметр то можно без скобка 
+const newPost = (post, addDate = Date()) => ({
+	...post,
+	addDate,
+})
+const firstPost = {
+	id: 1,
+  author:'Edson'
 }
-
-(a,b) => a + b //если есть одно выражение например a + b то можно 
-() => console.log('edson')
-//reduction arrow function 
+const secondPost = {
+	id: 2,
+	author: 'Kcenia',
+}
+console.dir(newPost(firstPost))
+console.dir(newPost(secondPost))
+//default function parametr values example
