@@ -1,4 +1,7 @@
-setTimeout(() => {
-	console.log('edson')
-},1000)
-//arrow function  another example use 
+a => {
+  //если только один параметр то можно без скобка 
+}
+
+(a,b) => a + b //если есть одно выражение например a + b то можно 
+() => console.log('edson')
+//reduction arrow function 
