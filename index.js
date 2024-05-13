@@ -1,7 +1,6 @@
-//массив это обект с с цифровами имменами свойсв
-//формат записи масиивв
-const myArray = new Array (1,2,3)
+//massiv read element
+const myArray = [1,true,"gbovilotocui"]
 console.log(myArray)
-const myArray2 = [1,2,3]
-console.table(myArray2)
-// delete myArray[1]//delete element of massiv
+console.log(myArray[0])//1
+console.log(myArray[1])//true
+console.log(myArray.length)//3 length this is many element in massive
