@@ -1,4 +1,5 @@
-//декустуризация массив dextuzation massiv
-const fruits = new Array('apple', 'banana', 'orange')
-const [fruitOne, fruitTwo, fruitTree] = fruits //dexturization massiv
-console.log(fruitOne, fruitTwo, fruitTree)
+dexturization massiv and object note
+в массив исползуем [] и имя не важен в обивление перемен 
+просто будет выводить  свойсть по порядке 
+в обжект  обивленение перемен важен она равно иямя свойст 
+в обект и исползуем {}
