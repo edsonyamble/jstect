@@ -1,5 +1,12 @@
-dexturization massiv and object note
-в массив исползуем [] и имя не важен в обивление перемен 
-просто будет выводить  свойсть по порядке 
-в обжект  обивленение перемен важен она равно иямя свойст 
-в обект и исползуем {}
+//dexturization  fuction
+const userProfile = {
+	name: 'Edson',
+	commentQty: 23,
+	haSigned: true,
+}
+const userInfo = ({ name, commentQty }) => {
+	if (!commentQty) {
+		return `User ${name} has comment`
+	} else return `User ${name} has ${commentQty} comment`
+}
+console.log(userInfo(userProfile))
