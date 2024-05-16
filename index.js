@@ -1,12 +1,16 @@
-//условия инструкция terms and condition in function
-//if in function
-const sumPositiveNumbers = (a, b) => {
-	if (typeof a !== 'number' || typeof b !== 'number') {
-		return 'One of argument is not a  number'
-	}//проверка цифри
-		if (a <= 0 || typeof b <=0 ) {
-			return 'numbers are note positive '
-		}
-		return a + b 
+//terms and condition switch
+const month = 2
+
+switch (month) {
+	case 12:
+		console.log('декабрь')
+		break //sans lui les conditions continu si c est vrai
+	case 1:
+		console.log('Январь')
+		break //sans lui les conditions continu si c est vrai
+	case 2:
+		console.log('Февраль')
+		break //sans lui les conditions continu si c est vrai
+	default:
+		console.log('это не зимний месяц')
 }
-console.log(sumPositiveNumbers(-12,10))
