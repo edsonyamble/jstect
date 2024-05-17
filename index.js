@@ -1,5 +1,3 @@
-
-convert object to massive 
-3 method 
-
-Object.keys(), Object.values(), andObject.entries()
+import myName from '../moduleOne'
+require('./module/moduleOne.mjs')
+myName()
