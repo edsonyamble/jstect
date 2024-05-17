@@ -1,13 +1,10 @@
-//cycle for in 
-// for (key = название каждый свойство обект in object ){
-	//действие с каждым свойства обект 
-	//значение свойства object[key]
-// }
+//cycle foreach for object
+
 const myObject = {
-	x:2,
-	y:true,
-	z:'Edson'
+	x: 2,
+	y: true,
+	z: 'Edson',
 }
-for(key in myObject){
-	console.log(key,myObject[key])
-}
+Object.keys(myObject).forEach(key => {
+	console.log(key, myObject[key])
+})
