@@ -1,7 +1,8 @@
-//cycle for in for massive
-
-const myArray = [true,'name']
-
-for(const key in myArray){
-	console.log(myArray[key])
+//cycle for of  
+//можно вевести кажды елемент каждый букв
+const myLetter = 'Hey'
+for(letter of myLetter){
+	console.log(letter)
 }
+
+
