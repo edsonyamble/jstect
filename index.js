@@ -1,8 +1,5 @@
-//cycle for of  
-//можно вевести кажды елемент каждый букв
-const myLetter = 'Hey'
-for(letter of myLetter){
-	console.log(letter)
-}
 
+convert object to massive 
+3 method 
 
+Object.keys(), Object.values(), andObject.entries()
