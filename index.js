@@ -1,10 +1,7 @@
-//cycle foreach for object
+//cycle for in for massive
 
-const myObject = {
-	x: 2,
-	y: true,
-	z: 'Edson',
+const myArray = [true,'name']
+
+for(const key in myArray){
+	console.log(myArray[key])
 }
-Object.keys(myObject).forEach(key => {
-	console.log(key, myObject[key])
-})
