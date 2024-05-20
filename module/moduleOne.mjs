@@ -1,4 +1,4 @@
 //divers export
-const one = 'Edson'
-const two = 'Kcenia'
-export { one, two }
+const sum = (a, b) => a + b
+const mult = (a, b) => a * b
+export { sum, mult }

@@ -1,3 +1,3 @@
-import {one as oneRename,two} from './moduleOne.mjs'//change name in variable import module
-console.log(oneRename)
-console.log(two)
+import { sum, mult } from './moduleOne.mjs'
+console.log(sum(10, 20))
+console.log(mult(10, 20))
