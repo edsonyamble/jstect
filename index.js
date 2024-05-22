@@ -1,4 +1,4 @@
-//class.. позваляет создавать протототип для обекты
+//class.. static method не доступен в екземплияр класс 
 class Comment {
 	constructor(text) {
 		this.text = text
@@ -7,9 +7,9 @@ class Comment {
 	upvote() {
 		this.voteQty += 1
 	}
+  static mergeComments(first,second){
+    return `${first} ${second}`
+  }
 }
-const firstComment = new Comment('first') //create new exempliar class
-firstComment.upvote()
-console.log(firstComment.voteQty)
-firstComment.upvote()
-console.log(firstComment.voteQty)
+
+console.log(Comment.mergeComments('Edson', 'Kcenia'))
