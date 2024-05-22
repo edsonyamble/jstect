@@ -1,6 +1,6 @@
 //class.. позваляет создавать протототип для обекты
 class Comment {
-	contructor(text) {
+	constructor(text) {
 		this.text = text
 		this.voteQty = 0
 	}
@@ -8,6 +8,8 @@ class Comment {
 		this.voteQty += 1
 	}
 }
-const firstComment = new Comment('first comment') //create new exempliar class
-console.log(firstComment)
-console.log(firstComment instanceof Object)//affillation 
+const firstComment = new Comment('first') //create new exempliar class
+firstComment.upvote()
+console.log(firstComment.voteQty)
+firstComment.upvote()
+console.log(firstComment.voteQty)
