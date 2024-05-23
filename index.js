@@ -1,15 +1,10 @@
-//class.. static method не доступен в екземплияр класс 
-class Comment {
-	constructor(text) {
-		this.text = text
-		this.voteQty = 0
-	}
-	upvote() {
-		this.voteQty += 1
-	}
-  static mergeComments(first,second){
-    return `${first} ${second}`
+//class.. extension расширение  она автомтические досуная в екземпляр класс 
+
+class NumberArray extends Array{
+  sum() {
+    return this.reduce ((el,acc) => acc += el, 0 )//с метод reduce можно сумировать свойства в массив 0 это начало значение 
   }
 }
-
-console.log(Comment.mergeComments('Edson', 'Kcenia'))
+const myArray = new NumberArray(2,5,7)
+console.log(myArray)
+console.table(myArray.sum())
