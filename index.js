@@ -1,10 +1,9 @@
-//class.. extension расширение  она автомтические досуная в екземпляр класс 
+//промисс позволяет обрабатывать отложение во время
+//события
+//промис это обещание предоставить результат позже
+//промисс может вернут ошибку если резултать не возможно
+//состояне промисс ожидание исполен отклонен
 
-class NumberArray extends Array{
-  sum() {
-    return this.reduce ((el,acc) => acc += el, 0 )//с метод reduce можно сумировать свойства в массив 0 это начало значение 
-  }
-}
-const myArray = new NumberArray(2,5,7)
-console.log(myArray)
-console.table(myArray.sum())
+const myPromise = new Promise((resolve, reject) => {})
+
+myPromise.then(value=>{исполен}).catch(error=>{отключен})//получение резултати промисса 
