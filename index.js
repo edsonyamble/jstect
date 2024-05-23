@@ -3,7 +3,8 @@
 //промис это обещание предоставить результат позже
 //промисс может вернут ошибку если резултать не возможно
 //состояне промисс ожидание исполен отклонен
-
-const myPromise = new Promise((resolve, reject) => {})
-
-myPromise.then(value=>{исполен}).catch(error=>{отключен})//получение резултати промисса 
+fetch('https://jsonplaceholder.typicode.com/todos')
+	.then(response => response.json())
+	.then(json => console.log(json))
+	.catch(error => console.error(error))
+	.catch(error => console.log(message.error))
