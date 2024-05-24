@@ -3,9 +3,13 @@
 //промис это обещание предоставить результат позже
 //промисс может вернут ошибку если резултать не возможно
 //состояне промисс ожидание исполен отклонен
-fetch('https://jsonplaceholder.typicode.com/todos')
-	.then(response => {console.log(response)
-		return response.json()})
-	.then(json => console.log(json))
+const getData = url =>
+	new Promise((resolve, reject) =>
+		fetch(url)
+			.then(response => response.json())
+			.then(json => resolve(json))
+			.catch(error => reject(error))
+	)
+getData('https://jsonplaceholder.typicode.com/todos')
+	.then(data => console.log(data))
 	.catch(error => console.error(error))
-	.catch(error => console.log(message.error))
