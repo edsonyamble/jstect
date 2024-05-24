@@ -1,8 +1,10 @@
 //ASync/await это синтакс дляя упршение работы с промисси
 //await in async 
-async function asyncFn() {
-return 'success'
+const timerPromise = () =>
+new Promise((resolve,reject)=>setTimeout(()=>resolve(),2000))
+const asyncFn = async ()=>{
+	console.log('time start')
+	await timerPromise()
+	console.log('timer ending')
 }
 asyncFn()
-.then(value =>console.log(value))
-.catch(error=>console.log(error.message))
