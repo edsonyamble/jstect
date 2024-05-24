@@ -4,7 +4,8 @@
 //промисс может вернут ошибку если резултать не возможно
 //состояне промисс ожидание исполен отклонен
 fetch('https://jsonplaceholder.typicode.com/todos')
-	.then(response => response.json())
+	.then(response => {console.log(response)
+		return response.json()})
 	.then(json => console.log(json))
 	.catch(error => console.error(error))
 	.catch(error => console.log(message.error))
