@@ -1,2 +1,3 @@
-const age = 31
-export default age
+module.exports = function rand() {
+	return Math.random()//funcion send randon number
+}
