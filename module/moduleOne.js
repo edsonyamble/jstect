@@ -1,3 +1,6 @@
-//node module раширение  .js у module javascript mjs
-const rand = require('./moduleTwo')
-console.log(rand())
+//name module 
+// const rand = require('./moduleTwo')
+// console.log(rand.randomInt())//с иминеюшый модул старый метод 
+
+const {randomInt}= require('./moduleTwo')
+console.log(randomInt())
