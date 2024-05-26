@@ -1,1 +1,2 @@
-module.exports = 31
+const age = 31
+export default age
