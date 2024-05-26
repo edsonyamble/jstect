@@ -1,12 +1,5 @@
-const getData = async url => {
-	const res = await fetch(url)
-	const json = await res.json()
-	return json
+let str =''
+for (let i = 0; i <= 10; i++) {
+	str = str + i + '_';
 }
-const url = 'https://jsonplaceholder.typicode.com/todos'
-try {
-	const data = await getData(url)
-	console.log(data)
-} catch (error) {
-	console.log(error.message)
-}
+console.log (str)
