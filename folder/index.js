@@ -25,6 +25,6 @@ f02()
 function f03() {
 	const pathdir = './test/info.dat'
 	const fileSize = fs.statSync(pathdir)
-	console.log(fileSize)
+	console.log(fileSize.size)
 }
 f03()
