@@ -11,3 +11,13 @@ function f01() {
 	}
 }
 f01()
+//проверка если файл сушествует
+function f02() {
+	const pathdir = './test/info.dat'
+	if (fs.existsSync(pathdir)) {
+		console.log('yes')
+	} else {
+		console.log('no')
+	}
+}
+f02()
