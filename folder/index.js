@@ -21,3 +21,10 @@ function f02() {
 	}
 }
 f02()
+//размер файл
+function f03() {
+	const pathdir = './test/info.dat'
+	const fileSize = fs.statSync(pathdir)
+	console.log(fileSize)
+}
+f03()
