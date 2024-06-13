@@ -45,6 +45,10 @@ f04()
 function f05() {
 	const pathdir = './test'
 	const allfile = fs.readdirSync(pathdir)
+	let out = ''
+	allfile.forEach(item => (out += item + '\n'))
+	//permet de mettre a laligne avec foreach
 	console.log(allfile)
+	console.log(out)
 }
 f05()
