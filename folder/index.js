@@ -52,3 +52,8 @@ function f05() {
 	console.log(out)
 }
 f05()
+//получить абсолюстный пут
+const directoryPath = path.join(__dirname, 'test') //join permet de coller  absolute link avec test
+console.log(directoryPath)
+//get absololute link file or folder + join
+console.log(__dirname) //get absolute link
