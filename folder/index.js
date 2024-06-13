@@ -32,6 +32,8 @@ f03()
 function f04() {
 	const pathdir = './test/info.dat'
 	const fileName = path.basename(pathdir)
+	const fileNameDirectory = path.dirname(pathdir) //pour voir directory du dossier
 	console.log(fileName)
+	console.log(fileNameDirectory)
 }
 f04()
