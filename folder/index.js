@@ -41,3 +41,10 @@ function f04() {
 	console.log(fileNameExt)
 }
 f04()
+//получение файли и папки в директори
+function f05() {
+	const pathdir = './test'
+	const allfile = fs.readdirSync(pathdir)
+	console.log(allfile)
+}
+f05()
