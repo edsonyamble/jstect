@@ -32,8 +32,12 @@ f03()
 function f04() {
 	const pathdir = './test/info.dat'
 	const fileName = path.basename(pathdir)
+	const fileNameExt = path.extname(pathdir)
 	const fileNameDirectory = path.dirname(pathdir) //pour voir directory du dossier
+	const fileNameParse = path.parse(pathdir) //parsing
 	console.log(fileName)
 	console.log(fileNameDirectory)
+	console.log(fileNameParse)
+	console.log(fileNameExt)
 }
 f04()
