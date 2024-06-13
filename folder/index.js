@@ -28,3 +28,10 @@ function f03() {
 	console.log(fileSize.size)
 }
 f03()
+//имя и расшерение файл
+function f04() {
+	const pathdir = './test/info.dat'
+	const fileName = path.basename(pathdir)
+	console.log(fileName)
+}
+f04()
