@@ -4,9 +4,15 @@ const text =
 //write to file
 const pathToFile = './info_1.txt'
 fs.writeFileSync(pathToFile, text, { encoding: 'utf-8', flag: 'a' })
-
-// флаги файловый систем нод
-// r+ — открыть файл для чтения и для записи.
-// w+ — открыть файл для чтения и для записи, установив указатель потока в начало файла. Если файл не существует — он создаётся.
-// a — открыть файл для записи, установив указатель потока в конец файла. Если файл не существует — он создаётся.
-// a+ — открыть файл для чтения и записи, установив указатель потока в конец файла. Если файл не существует — он создаётся.
+//write massiv array
+const text2 = [
+	'je sui passe de rien maos ',
+	'jai conqui le benim ',
+	'e sui passe de rien maos jai conqui le benim ',
+]
+const pathToFileArray = './info_array.txt'
+fs.writeFileSync(pathToFileArray, text2.join('\n'), {
+	encoding: 'utf-8',
+	flag: 'w',
+})
+//flag w permet d ajouter mais de supprimer si existe deja donc sa ne se repete pas 
