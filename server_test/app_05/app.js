@@ -9,6 +9,7 @@ http
       case "/":
         console.log("main page");
         res.write("<h1>hello</h1>");
+        res.end();
         break;
       case "/about":
         console.log("about page");
@@ -17,20 +18,27 @@ http
           flag: "r",
         });
         res.write(data);
+        res.end();
         break;
       default:
         if (url.includes("images")) {
           console.log("images+++");
-          let data = fs.readFileSync("./public" + url);
-          res.setHeader("Content-type", "image/png");
-          res.write(data);
+          fs.readFile("./public" + url, {}, function (error, data) {
+            if (error) {
+            }
+            console.log("get image");
+            res.setHeader("Content-type", "image/png");
+            res.write(data);
+            res.end();
+          });
         } else {
           console.log("404");
-          res.write("<h1>404 page</h1>");
+          res.write("<h1>404 page gggg</h1>");
+          res.end();
         }
-        console.log("404");
-        res.write("<h1>404 page</h1>");
+      // console.log("404");
+      // res.write("<h1>404 page</h1>");
+      // res.end();
     }
-    res.end();
   })
   .listen(PORT); //create server port 3500
