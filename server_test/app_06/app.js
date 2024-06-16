@@ -41,6 +41,11 @@ http
 		const url = req.url
 		console.log(url)
 		switch (url) {
+			case '/':
+				console.log('main')
+				res.write('main page')
+				res.end()
+				break
 			case '/about':
 				console.log('about page')
 				staticFile(res, '/pages/about.html', '.html')
