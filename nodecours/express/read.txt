@@ -1,0 +1,8 @@
+pour comencer npm init 
+nodemon permet de changer le donnee sans redemarer node c est un npm paket 
+npm install --save-dev nodemon 
+locall
+npm install -g nodemon 
+# or using yarn: yarn global add nodemon
+
+dans packeage jsn script "dev":"nodemon app.js" maintenant on demare le projet npm run dev 
